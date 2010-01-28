@@ -1,0 +1,13 @@
+#summary How to compile and set up SNEEK.
+#labels Phase-Deploy
+
+= Requirements =
+
+ * devkitPro
+ * devkitARM (included in devkitPro, but most people didn't install it)
+ * a SVN-Client ([http://www.sliksvn.com silksvn], [http://tortoisesvn.tigris.org tortoisseSVN], or other)
+ * _Python (not necessarily, but will speed things up)_ 
+
+= Introduction =
+
+Seting up the requirements above is not handled here. *The rest of the guide comes as the day progresses.*
