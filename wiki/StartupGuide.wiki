@@ -3,11 +3,58 @@
 
 = Requirements =
 
- * devkitPro
+ * [http://sourceforge.net/project/showfiles.php?group_id=114505&package_id=160396 devkitPro]
  * devkitARM (included in devkitPro, but most people didn't install it)
  * a SVN-Client ([http://www.sliksvn.com silksvn], [http://tortoisesvn.tigris.org tortoisseSVN], or other)
- * _Python (not necessarily, but will speed things up)_ 
+ * [http://www.python.org/download/ Python]
+
+= Missing =
+ 
+ * How to use SVN
+ * How to dump the NAND
+ * How to get 0000000e.app using NUSD
 
 = Introduction =
 
-Seting up the requirements above is not handled here. *The rest of the guide comes as the day progresses.*
+Setting up the requirements above is not handled here. You'll find guides for these online.
+
+= Compiling =
+
+*1.* After you downloaded the source code, get [http://det1re.de/a/sneek/SNEEK_BATCH.zip this archive]. It includes three files of which one is a Batch. 
+
+*2.* Extract these files to a directory of your choice (note, that they have to stay together in order to get the batch to work)
+
+*3.* start SNEEK.bat _from cmd *(!)*_. If you start it by double clicking it could happen that your installed devkitPro is not found.
+
+*4.* it will ask you to insert the complete path to the dir, where you downloaded the SNEEK source. In my case, I have to input 
+{{{
+Please insert the complete path to the SNEEK source code:
+   - K:\coding\c\wii\sneek
+}}}
+
+*5.* The batch will ask you for your Python installation directory is installed. Insert the same way as with SNEEK
+{{{
+Where is Python installed (i.e. "C:\python26"):
+   - C:\python26
+}}}
+
+*6.* The batch will now starts compiling the modules. Don't worry if there are warnings, as long as it outputs someting like this to you after it finished compiling it went good:
+{{{
+Copying files
+   - compiled files
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+   - precompiled tools
+        1 file(s) copied.
+        1 file(s) copied.
+}}}
+If it says, that a file could not be found, check the logs and try to fix the problem. I've noticed, that you might need to run the batch multiple times, but it will succeed... 
+
+*7.* An Explorer will pop up and the batch will ask about IOS60's 0000000e.app _(size: 161kb)_. Get it using [http://wiibrew.org/wiki/NUS_Downloader NUSD] and place it in the directory the Explorer shows. 
+
+*8.* Return to the batch and hit ENTER to let it finish.
+
+*9.* Pressing ENTER again wiil open another Explorer with the directory that has all files, that need to be copied to your SD. You successfully built SNEEK. The perfect run (without compiling messages) should look like this:
+
+     [http://det1re.de/a/sneek/sneek_perfect_run.png]
