@@ -1,5 +1,5 @@
+#summary mashup of frequently asked questions.
 #labels Featured
-#FAQ
 
 = I just get a black screen =
   * assure that you put the NAND FS dump into the root of the SD card
