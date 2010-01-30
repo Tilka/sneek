@@ -1,0 +1,47 @@
+#labels Featured
+#FAQ
+
+= I just get a black screen =
+  * assure that you put the NAND FS dump into the root of the SD card
+  * assure that the boot2.bin is in the root of the SD card
+  * some SD cards are not supported try another card
+  * SNEEK uses USBGecko for debug output, if you have anything in slot B it might keep SNEEK from booting, also when an USBGecko is inserted SNEEK will hold until you read the output.
+  * the bootmii folder should have these three files:
+    #-armboot.bin (compiled from source or direct download)
+    #-ppcboot.elf (the default bootmii ppcboot)
+    #-bootmii.ini (set to autoboot, delay set to 0)
+
+  * Only full FS dumps work with SNEEK, some dumpers skip IOSs or data folders. The system menu won't load without a setting.txt present.
+
+If all the above fail or a previously working NAND stops working you can try the following:
+
+     * delete "\title\00000001\00000002\data\cdb.vff"
+     Note: the recreating of the file can take up to 5 mins or even longer.
+     * delete everything in the "\title\00000001\00000002\data\" folder EXCEPT the setting.txt!!
+    Note: again recreating of the files can take up to 5mins or even longer.
+
+     * delete the shared2 folder
+    Note: if you delete the shared2 folder you have to setup your whole Wii again!!
+
+= cIOS doesn't work =
+
+The reason why most cIOS do not work is currently unknown.
+When SNEEK tries to load a cIOS one module does not return when loaded by the kernel and just freezes.
+Which means that the issue doesn't seem to be solveable via SNEEK, the cIOS authors must either fix their cIOS or if SNEEK is at fault supply a fix or at least the exact issue.
+SNEEK has no code in place which would prevent cIOS from working!
+
+= Stuff loads slow =
+
+The speed issue is quite tricky, one rule of thumb is the less is on the card the faster it is.
+But certain cards seems to be fast even with alot of content installed.
+Time will tell how we can improve this issue.
+
+= SD cards do not work for Wii applications =
+
+SD support for Wii applications is currently disabled, due it not working very well.
+
+If you still want to give it a try simply change line 1605 in the main.c of the ES module to
+{{{
+*SDStatus = 1;
+}}}
+Note: this feature is buggy and might break the FS on your SD card, make a backup before using thise feature!!
