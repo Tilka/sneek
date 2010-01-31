@@ -1,6 +1,10 @@
 #summary How to compile and set up SNEEK.
 #labels Phase-Deploy,Featured
 
+[http://det1re.de/a/sneek/sneek_startupguide.png] 
+<wiki:toc max_depth="2"/>
+
+[http://det1re.de/a/sneek/sneek_div.png]
 = Requirements =
 
  * [http://sourceforge.net/project/showfiles.php?group_id=114505&package_id=160396 devkitPro]
@@ -8,18 +12,42 @@
  * a SVN-Client ([http://www.sliksvn.com sliksvn], [http://tortoisesvn.tigris.org tortoisseSVN], or other)
  * [http://www.python.org/download/ Python interpreter]
 
-
-= Missing =
-
- * How to dump the NAND
- * How to get 0000000e.app using NUSD
-
-
+[http://det1re.de/a/sneek/sneek_div.png]
 = Introduction =
 
 Setting up the requirements above is not handled here. You'll find guides for these online.
 
+[http://det1re.de/a/sneek/sneek_div.png]
+= Creating a NAND filesystem dump =
+There are two main ways to get your NAND filesystem dumped. The first one is using crediar's FSDumper _(other Filesystem Dumpers should work, too)_ and the second features a `BootMii` nand.bin, which get's unpacked by a tool. This way should be prefered if there is already a `BootMii` backup, that is at a considerable state.
 
+== Using FSDumper ==
+
+*1.* Download our very own [http://sneek.googlecode.com/files/FSDumper.zip FSDumper].
+
+*2.* Start it using your prefered method, e.g. via Homebrew Channel or Bannerbomb.
+
+*3.* Press *(1)* on your WiiMote to start the dumping process. FSDumper will automatically place all files in the correct spot on your SD card. As a result you would get this folders on your SD's root:
+  * import
+  * meta
+  * shared1
+  * shared2
+  * sys
+  * ticket
+  * title
+  * tmp
+
+*4.* Place these folders on the SD card you want to use with SNEEK.
+
+== Using a BootMii nand.bin ==
+
+*1.* Get your nand.bin file ready and download & unpack [http://www.gbatemp.net/index.php?showtopic=179630 NAND Extractor]. Note, that it requires .Net Framework 3.5
+
+*2.* In NAND Extractor choose "File" » "Open", choose your nand.bin and click "OK".
+
+*3.* You should now see the file-/folderstructure. Click "File" » "Extract All" and let it unpack the dump to the root of your SD card. After unpacking is done check the integrity of the dump with the above list.
+
+[http://det1re.de/a/sneek/sneek_div.png]
 = Downloading the source =
 
 To download the source you need an Subversion (short: svn) client. With it you can download the complete source of SNEEK (and other code.google projects) in one run.
@@ -41,7 +69,7 @@ K:\Coding\C\wii>
 
 *3.* You can also modify the command via altering the subfolder for SNEEK from the default {{{"sneek-read-only"}}} to {{{"sneek"}}} or anything. However sliksvn will then download the latest source files. You can now go on compiling the files.
 
-
+[http://det1re.de/a/sneek/sneek_div.png]
 = Compiling =
 
 *1.* After you downloaded the source code, get [http://det1re.de/a/sneek/SNEEK_BATCH.zip this archive]. It includes three files of which one is a Batch. 
@@ -75,7 +103,7 @@ Copying files
 }}}
 If it says, that a file could not be found, check the logs and try to fix the problem. I've noticed, that you might need to run the batch multiple times, but it will succeed... 
 
-*7.* An Explorer will pop up and the batch will ask about IOS60's 0000000e.app _(size: 162kb)_. Get it using [http://wiibrew.org/wiki/NUS_Downloader NUSD] and place it in the directory the Explorer shows. A how to on NUSD is found at the end of this [StartupGuide#Using_NUSD_to_acquire_0000000e.app article].
+*7.* An Explorer will pop up and the batch will ask about IOS60's 0000000e.app _(size: 162kb)_. Get it using [http://wiibrew.org/wiki/NUS_Downloader NUSD] and place it in the directory the Explorer shows. A how to on NUSD is found near the end of this [StartupGuide#Using_NUSD_to_acquire_0000000e.app article].
 
 *8.* Return to the batch and hit ENTER to let it finish.
 
@@ -83,12 +111,12 @@ If it says, that a file could not be found, check the logs and try to fix the pr
 
    [http://det1re.de/a/sneek/sneek_perfect_run.png]
 
-
+[http://det1re.de/a/sneek/sneek_div.png]
 = Using NUSD to acquire 0000000e.app =
 
 *1.* Download [http://wiibrew.org/wiki/NUS_Downloader NUS Downloader].
 
-*2.* Get the key.bin file (also known as commonkey.bin) and place it in the same directory as NUSD. You can find that file on the Internet or use a tool named _MakeKeyBin.exe_, also found on the Internet.
+*2.* Get the key.bin file (also known as common-key.bin) and place it in the same directory as NUSD. You can find that file on the Internet or use a tool named `MakeKeyBin.exe`, also found on the Internet.
 
 *3.* Click "Database" and choose "IOS" » "000000010000003C - IOS60" » "v6174".
 
