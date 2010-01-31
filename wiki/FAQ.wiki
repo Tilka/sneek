@@ -40,7 +40,7 @@ Time will tell how we can improve this issue.
 
 SD support for Wii applications is currently disabled, due it not working very well.
 
-If you still want to give it a try simply change line 1605 in the main.c of the ES module to
+If you still want to give it a try simply change line 1593 in the main.c of the ES module to
 {{{
 *SDStatus = 1;
 }}}
