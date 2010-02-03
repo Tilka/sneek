@@ -16,6 +16,10 @@
     #-bootmii.ini (set to autoboot, delay set to 0)
   * Only full FS dumps work with SNEEK, some dumpers skip IOSs or data folders. The system menu won't load without a setting.txt present.
   * SNEEK only works with modular IOSs (>28) if the system tries to load any IOS <= 28 it will fall back to IOS 35, so assure IOS 35 is installed.
+  * Preloader/Priiloader doesn't seem to work with SNEEK, you can easily remove it on the SD-NAND.
+    #-goto \title\00000001\00000002\content\
+    #-there should be a file called 100000xx.app and a file called 000000xx.app, delete the 000000xx.app file
+    #-rename the 100000xx.app to 000000xx.app, that's it
 
 If all the above fail or a previously working NAND stops working you can try the following:
   * delete "\title\00000001\00000002\data\cdb.vff" — _*Note:* the recreating of the file can take up to 5 mins or even longer._
@@ -47,3 +51,9 @@ If you still want to give it a try simply change line 1593 in the main.c of the 
 *SDStatus = 1;
 }}}
 Note: this feature is buggy and might break the FS on your SD card, make a backup before using thise feature! Reading from SD has been told to work, but writing should be an issue.
+
+[http://det1re.de/a/sneek/sneek_div.png]
+= Why is USB not supported, will it ever be supported? =
+Simply said because I thought SD is way better than USB storage devices for this kind of thing.
+
+Chances are low that SNEEK will ever support USB, the way how SNEEK is designed limits the size per module and the FS module is currently close to its limits (~100bytes left or so) adding the USB stuff would require a few KBs more than there is left.
