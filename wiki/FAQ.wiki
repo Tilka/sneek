@@ -9,6 +9,7 @@
   * assure that you put the NAND FS dump into the root of the SD card
   * assure that the boot2.bin is in the root of the SD card
   * some SD cards are not supported try another card
+  * the FAT lib used doesn't seem to work with 64K cluster size, assure that you use a smaller size
   * SNEEK uses USB Gecko for debug output, if you have anything in slot B it might keep SNEEK from booting, also when an USB Gecko is inserted SNEEK will hold until you read the output.
   * the bootmii folder should have these three files:
     #-armboot.bin (compiled from source or direct download)
