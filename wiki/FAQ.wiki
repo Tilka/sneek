@@ -34,6 +34,7 @@ The reason why most cIOS do not work is currently unknown.
 When SNEEK tries to load a cIOS one module does not return when loaded by the kernel and just freezes.
 Which means that the issue doesn't seem to be solveable via SNEEK, the cIOS authors must either fix their cIOS or if SNEEK is at fault supply a fix or at least the exact issue.
 SNEEK has no code in place which would prevent cIOS from working!
+*However cIOSX rev18 from Waninkoko has support for SNEEK and thus works!*
 
 [http://det1re.de/a/sneek/sneek_div.png]
 = Stuff loads slow =
