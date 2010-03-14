@@ -13,6 +13,7 @@ A quick guide on how to build the di module.
 
 = Compiling =
 Compiling works the same way as the StartupGuide, the only difference is you need to enable *#USBHAX* in es/ES.c by removing the comment from it.
+
 [http://det1re.de/a/sneek/sneek_div.png]
 
 = di.bin creation =
