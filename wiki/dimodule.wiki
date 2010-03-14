@@ -4,7 +4,7 @@
 
 [http://det1re.de/a/sneek/sneek_div.png]
 = Requirements =
-  * This guide assumes you have gotten the basic SNEEK compiled based on the StarupGuide.
+  * This guide assumes you have gotten the basic SNEEK compiled based on the StartupGuide.
 [http://det1re.de/a/sneek/sneek_div.png]
 = Introduction =
 
@@ -12,8 +12,10 @@ A quick guide on how to build the di module.
 [http://det1re.de/a/sneek/sneek_div.png]
 
 = Compiling =
-  * Compiling works the same way as the StartupGuide, the only difference is you need to enable *#USBHAX* in es/ES.c by removing the comment from it.
-  * It is also recommended you take a look at the di/main.c to change the default game path and region.
+  * Compiling works the same way as the StartupGuide
+  * You need to enable *#USBHAX* in es/ES.c by removing the comment from it 
+  * finally use the SNEEK-DI.cmd to build.
+  * It is also recommended you take a look at the di/main.c to change the default game and region.
 
 [http://det1re.de/a/sneek/sneek_div.png]
 
