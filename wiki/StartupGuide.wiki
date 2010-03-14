@@ -11,11 +11,13 @@
  * devkitARM (included in devkitPro, but most people didn't install it)
  * a SVN-Client ([http://www.sliksvn.com sliksvn], [http://tortoisesvn.tigris.org tortoisseSVN], or other)
  * [http://www.python.org/download/ Python interpreter]
+ * r17 elfins
 
 [http://det1re.de/a/sneek/sneek_div.png]
 = Introduction =
 
-Setting up the requirements above is not handled here. You'll find guides for these online.*Note*: As of 13.03 or any SVN revsion above r17, there is a new di module. If you do not wish to use this module (Currently the default), you will need *elfins from r17 (version 1.0)*.
+Setting up the requirements above is not handled here. You'll find guides for these online.
+*Note*: As of 13.03 or any SVN revsion above r17, there is a new di module. If you do not wish to use this module (Currently the default), you will need *elfins from r17 (version 1.0)*.
 
 [http://det1re.de/a/sneek/sneek_div.png]
 = Creating a NAND filesystem dump =
