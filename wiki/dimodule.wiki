@@ -5,17 +5,18 @@
 [http://det1re.de/a/sneek/sneek_div.png]
 = Requirements =
   * This guide assumes you have gotten the basic SNEEK compiled based on the StarupGuide.
-
+[http://det1re.de/a/sneek/sneek_div.png]
 = Introduction =
 
 A quick guide on how to build the di module.
 [http://det1re.de/a/sneek/sneek_div.png]
 
 = Compiling =
-Compiling works the same way as the StartupGuide, the only difference is you need to enable #USBHAX in es/ES.c by removing the comment from it.
+Compiling works the same way as the StartupGuide, the only difference is you need to enable *#USBHAX* in es/ES.c by removing the comment from it.
+[http://det1re.de/a/sneek/sneek_div.png]
 
 = di.bin creation =
-Note: I will update the batch script to do this for you.
+Note: build_boot2_di.cmd does this all for you now.
 
 *1.* Copy the *00000001.app* from the same folder you downloaded using [http://wiibrew.org/wiki/NUS_Downloader NUSD] from the original guide to the SNEEK folder.
 
