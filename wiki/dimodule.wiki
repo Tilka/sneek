@@ -14,8 +14,9 @@ A quick guide on how to build the di module.
 = Compiling =
 Compiling works the same way as the StartupGuide, the only difference is you need to enable #USBHAX in es/ES.c by removing the comment from it.
 
-= Compiling =
+= di.bin creation =
 Note: I will update the batch script to do this for you.
+
 *1.* Copy the *00000001.app* from the same folder you downloaded using [http://wiibrew.org/wiki/NUS_Downloader NUSD] from the original guide to the SNEEK folder.
 
 *2.* open a command prompt window and run elfins 00000001.app di/iosmodule.elf di.bin
