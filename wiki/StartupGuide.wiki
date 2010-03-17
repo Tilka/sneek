@@ -16,7 +16,7 @@
 = Introduction =
 
 Setting up the requirements above is not handled here. You'll find guides for these online.
-*Note*: As of 13.03 or any SVN revsion above r17, there is a new di module, for more information see the dimodule wiki page..
+*Note*: As of 13.03. or any SVN revision above r17, there is a new DI module. For more information see the [dimodule] wiki page..
 
 [http://det1re.de/a/sneek/sneek_div.png]
 = Creating a NAND filesystem dump =
@@ -73,13 +73,13 @@ K:\Coding\C\wii>
 [http://det1re.de/a/sneek/sneek_div.png]
 = Compiling =
 
-*1.* After you downloaded the source code, get [http://sneek.googlecode.com/files/SNEEK_BATCH-v2.zip this archive]. It includes three files of which one is a Batch. 
+*1.* After you downloaded the source code, get [http://sneek.googlecode.com/files/SNEEK-BATCH-v2a.rar this archive]. It includes four files of which two are a batch {{{(*.cmd)}}}. 
 
 *2.* Extract these files to a directory of your choice (note, that they have to stay together in order to get the batch to work)
 
-*3.* start SNEEK.bat _from cmd *(!)*_. If you start it by double clicking it could happen that your installed devkitPro is not found.
+*3.* start SNEEK.cmd _from cmd *(!)*_. If you start it by double clicking it could happen that your installed devkitPro is not found.
 
-*4.* it will ask you to insert the complete path to the dir, where you downloaded the SNEEK source. In my case, I have to input 
+*4.* it will ask you to insert the complete path to the dir, where you downloaded the SNEEK source. In my case, I have to input _(always without trailing slash)_ 
 {{{
 Please insert the complete path to the SNEEK source code:
    - K:\coding\c\wii\sneek
