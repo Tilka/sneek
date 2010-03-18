@@ -56,6 +56,4 @@ Note: this feature is buggy and might break the FS on your SD card, make a backu
 
 [http://det1re.de/a/sneek/sneek_div.png]
 = Why is USB not supported, will it ever be supported? =
-Simply said because I thought SD is way better than USB storage devices for this kind of thing.
-
-Chances are low that SNEEK will ever support USB, the way how SNEEK is designed limits the size per module and the FS module is currently close to its limits (~100bytes left or so) adding the USB stuff would require a few KBs more than there is left.
+Due the update to IOS70 there is now an extra build which supports USB!
