@@ -11,7 +11,7 @@
   * some SD cards are not supported try another card
   * the FAT lib used doesn't seem to work with 64K cluster size, assure that you use a smaller size
   * SNEEK uses USB Gecko for debug output, if you have anything in slot B it might keep SNEEK from booting, also when an USB Gecko is inserted SNEEK will hold until you read the output.
-  * the bootmii folder should have these three files:
+  * the bootmii folder should have this file:
     #-armboot.bin (compiled from source or direct download)
   * Only full FS dumps work with SNEEK, some dumpers skip IOSs or data folders. The system menu won't load without a setting.txt present.
   * SNEEK only works with modular IOSs (>28) if the system tries to load any IOS <= 28 it will fall back to IOS 35, so assure IOS 35 is installed.
