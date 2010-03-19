@@ -1,5 +1,5 @@
 #summary How to compile and set up SNEEK.
-#labels Phase-Deploy,Featured
+#labels Phase-Deploy,Featured,Deprecated
 
 [http://det1re.de/a/sneek/sneek_startupguide.png] 
 <wiki:toc max_depth="2"/>
