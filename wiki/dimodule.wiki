@@ -1,5 +1,5 @@
 #summary How to use the new DI module.
-#labels Phase-Deploy,Featured
+#labels Phase-Deploy,Featured,Deprecated
 <wiki:toc max_depth="2"/>
 
 [http://det1re.de/a/sneek/sneek_div.png]
@@ -24,4 +24,4 @@ Note: build_boot2_di.cmd does this all for you now.
 
 *1.* Copy the *00000001.app* from the same folder you downloaded using [http://wiibrew.org/wiki/NUS_Downloader NUSD] from the original guide to the SNEEK folder.
 
-*2.* open a command prompt window and run elfins 00000001.app di/iosmodule.elf di.bin
+*2.* open a command prompt window and run elfins di/iosmodule.elf 00000001.app di.bin
