@@ -1,27 +1,20 @@
 #summary How to use the new DI module.
-#labels Phase-Deploy,Featured,Deprecated
+#labels Deprecated
 <wiki:toc max_depth="2"/>
 
 [http://det1re.de/a/sneek/sneek_div.png]
 = Requirements =
-  * This guide assumes you have gotten the basic SNEEK compiled based on the StartupGuide.
+|| *WARNING*: It has been reported multiple times, that newer revisions of SNEEK won't work with devkitARM release 26 and above. ||
+
+  * This guide assumes you have gotten the basic SNEEK build environment up and running based on the [StartupGuide].
 [http://det1re.de/a/sneek/sneek_div.png]
+
 = Introduction =
 
-A quick guide on how to build the di module.
-[http://det1re.de/a/sneek/sneek_div.png]
-
-= Compiling =
-  * Compiling works the same way as the StartupGuide
-  * You need to enable *#USBHAX* in es/ES.c by removing the comment from it 
-  * finally use the SNEEK-DI.cmd to build.
-  * It is also recommended you take a look at the di/main.c to change the default game and region.
+A quick guide on how to use the di module.
 
 [http://det1re.de/a/sneek/sneek_div.png]
 
-= di.bin creation =
-Note: build_boot2_di.cmd does this all for you now.
-
-*1.* Copy the *00000001.app* from the same folder you downloaded using [http://wiibrew.org/wiki/NUS_Downloader NUSD] from the original guide to the SNEEK folder.
-
-*2.* open a command prompt window and run elfins di/iosmodule.elf 00000001.app di.bin
+= Information =
+  * If you have used the Batch file from the [StartupGuide], you will need to build using the build_boot2.cmd in the subversion.
+  * Once you have completed this, you will have three bin files boot2_usb.bin, boot2_di.bin and boot2_sd.bin.
