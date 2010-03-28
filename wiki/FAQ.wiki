@@ -46,9 +46,13 @@ Time will tell how we can improve this issue.
 
 SD support for Wii applications is currently disabled, due it not working very well.
 
-If you still want to give it a try simply change line 1593 in the main.c of the ES module to
+If you still want to give it a try search for this string in the main.c of the ES module
 {{{
-*SDStatus = 1;
+*SDStatus = 0x00000002;
+}}}
+and change it to
+{{{
+*SDStatus = 0x00000001;
 }}}
 Note: this feature is buggy and might break the FS on your SD card, make a backup before using thise feature! Reading from SD has been told to work, but writing should be an issue.
 
