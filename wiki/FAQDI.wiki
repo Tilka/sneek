@@ -9,6 +9,7 @@ Only use this FAQ if your normal SNEEK setup works, but when you try to use DI w
 [http://det1re.de/a/sneek/sneek_div.png]
 = I just get a black screen =
   * only clusters sizes 32K and lower are supported
+  * DI will always use the first partition if multiple are found
   * assure that you patched your 0000000E.app correctly with IOSKPatch i.e.:
     "IOSKPatch.exe 0000000E.app 0000000E_patched.app -s -d -v"
   * at least one game is required to boot
