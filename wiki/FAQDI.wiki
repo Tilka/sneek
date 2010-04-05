@@ -24,7 +24,7 @@ Only use this FAQ if your normal SNEEK setup works, but when you try to use DI w
   usb:/games/GameName/sys/bi2.bin
 
   usb:/games/GameName/ticket.bin
-  usb:/games/GameName/certs.bin
+  usb:/games/GameName/cert.bin
   usb:/games/GameName/tmd.bin
 }}}
 [http://det1re.de/a/sneek/sneek_div.png]
@@ -35,10 +35,10 @@ Only use this FAQ if your normal SNEEK setup works, but when you try to use DI w
       00000000 for JAP
       00000001 for USA
       00000002 for EUR
-      00000003 for KOR (verfiy!)
+      00000003 for KOR (verify!)
 }}}
     * system menu 4.2 has improved region checking without a patch, to either the system menu or the game, foreign games won't boot
 [http://det1re.de/a/sneek/sneek_div.png]
-= Game shows up in the menu but when booted stay at a black screen =
+= Game shows up in the menu but when booted stays at a black screen =
    * normally if this happens the game tried to switch the video mode which in some cases is forbidden and causes the game to stop. i.e. EUR console trying to load an USA game.
     The only solution is to directly patch the game or change the video mode of your console.
