@@ -1,0 +1,43 @@
+#summary Mashup of frequently asked questions for the DI module
+#labels Featured
+
+[http://det1re.de/a/sneek/sneek_faq.png] 
+<wiki:toc max_depth="2"/>
+
+Only use this FAQ if your normal SNEEK setup works, but when you try to use DI with it doesn't.
+
+[http://det1re.de/a/sneek/sneek_div.png]
+= I just get a black screen =
+  * only clusters sizes 32K and lower are supported
+  * assure that you patched your 0000000E.app correctly with IOSKPatch i.e.:
+    "IOSKPatch.exe 0000000E.app 0000000E_patched.app -s -d -v"
+  * at least one game is required to boot
+  * games must be put into the usb:/games folder in this format:
+{{{
+  usb:/games/GameName/files/<extracted game files>
+
+  usb:/games/GameName/sys/main.dol
+  usb:/games/GameName/sys/apploader.img
+  usb:/games/GameName/sys/fst.bin
+  usb:/games/GameName/sys/boot.bin
+  usb:/games/GameName/sys/bi2.bin
+
+  usb:/games/GameName/ticket.bin
+  usb:/games/GameName/certs.bin
+  usb:/games/GameName/tmd.bin
+}}}
+[http://det1re.de/a/sneek/sneek_div.png]
+= I get "This disc can not be read" =
+    * assure that you have a file called usb:/sneek/region.bin with your correct version
+      the value must be stored as 4 bytes (unsigned int/u32)
+{{{
+      00000000 for JAP
+      00000001 for USA
+      00000002 for EUR
+      00000003 for KOR (verfiy!)
+}}}
+    * system menu 4.2 has improved region checking without a patch, to either the system menu or the game, foreign games won't boot
+[http://det1re.de/a/sneek/sneek_div.png]
+= Game shows up in the menu but when booted stay at a black screen =
+   * normally if this happens the game tried to switch the video mode which in some cases is forbidden and causes the game to stop. i.e. EUR console trying to load an USA game.
+    The only solution is to directly patch the game or change the video mode of your console.
