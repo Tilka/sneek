@@ -1,7 +1,7 @@
 #summary Mashup of frequently asked questions for the DI module
 #labels Featured
 
-[http://det1re.de/a/sneek/sneek_faq.png]
+[http://det1re.de/a/sneek/sneek_faqdi.png]
 =*Only use this FAQ if your normal SNEEK setup works, but when you try to use DI with it doesn't.*=
 <wiki:toc max_depth="2"/>
 
