@@ -43,3 +43,4 @@
 = Game shows up in the menu but when booted stays at a black screen =
    * normally if this happens the game tried to switch the video mode which in some cases is forbidden and causes the game to stop. i.e. EUR console trying to load an USA game.
     The only solution is to directly patch the game or change the video mode of your console.
+   * Assure that the IOS version the game runs on is installed
