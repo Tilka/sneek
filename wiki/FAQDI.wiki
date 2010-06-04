@@ -29,18 +29,15 @@
   usb:/games/GameName/tmd.bin
 }}}
 [http://det1re.de/a/sneek/sneek_div.png]
-= I get "This disc can not be read" =
-    * assure that you have a file called usb:/sneek/region.bin with your correct version
-      the value must be stored as 4 bytes (unsigned int/u32)
-{{{
-      00000000 for JAP
-      00000001 for USA
-      00000002 for EUR
-      00000003 for KOR (verify!)
-}}}
-    * system menu 4.2 has improved region checking without a patch, to either the system menu or the game, foreign games won't boot
+= I can't open the SNEEK menu =
+    * You must HOLD the ONE button on the first wiimote in the system menu to open the menu.
+    * A file with a bitmaped font is required for the menu to work and is expect at sd:/font.bin
 [http://det1re.de/a/sneek/sneek_div.png]
-= Game shows up in the menu but when booted stays at a black screen =
+= I get "This disc can not be read" =
+    * Assure that the selected region matches your system menu's region, you can change the region within the SNEEK menu (hold 1 to open the menu, press B to switch to the settings menu)
+    * System menu 4.2 has improved region checking without a patch, to either the system menu or the game, foreign games won't boot (SNEEK includes patches for 4.2E and U)
+[http://det1re.de/a/sneek/sneek_div.png]
+= Game shows up in the game channel but when booted stays at a black screen =
    * normally if this happens the game tried to switch the video mode which in some cases is forbidden and causes the game to stop. i.e. EUR console trying to load an USA game.
-    The only solution is to directly patch the game or change the video mode of your console.
+    Try to enable the video mode patch within the settings menu of SNEEK otherwise the only other solutions are to directly patch the game or change the video mode of your console.
    * Assure that the IOS version the game runs on is installed
