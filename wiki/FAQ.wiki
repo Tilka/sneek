@@ -39,8 +39,7 @@ SNEEK has no code in place which would prevent cIOS from working!
 = Stuff loads slow =
 
 The speed issue is quite tricky, one rule of thumb is the less is on the card the faster it is.
-But certain cards seems to be fast even with alot of content installed.
-Time will tell how we can improve this issue.
+There is on way to gain some speed, reformat your SD card with the highest sector per cluster count possible but no more than 64 sectors per cluster (32kB Clusters).
 
 [http://det1re.de/a/sneek/sneek_div.png]
 = SD cards do not work for Wii applications =
