@@ -31,7 +31,7 @@
 [http://det1re.de/a/sneek/sneek_div.png]
 = I can't open the SNEEK menu =
     * You must HOLD the ONE button on the first wiimote in the system menu to open the menu.
-    * A file with a bitmaped font is required for the menu to work and is expect at sd:/font.bin
+    * A file with a bitmaped font is required for the menu to work and is expect at sd:/sneek/font.bin (SNEEK) or usb:/sneek/font.bin (UNEEK).
 [http://det1re.de/a/sneek/sneek_div.png]
 = I get "This disc can not be read" =
     * Assure that the selected region matches your system menu's region, you can change the region within the SNEEK menu (hold 1 to open the menu, press B to switch to the settings menu)
