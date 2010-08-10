@@ -7,7 +7,7 @@
 [http://det1re.de/a/sneek/sneek_div.png]
 = I just get a black screen =
   * assure that you put the NAND FS dump into the root of the SD card
-  * assure that the boot2.bin is in the root of the SD card
+  * assure that the kernel.bin is in sneek folder in the root of the SD card
   * some SD cards are not supported try another card
   * if you want to use SNEEK without DI assure that there is no di.bin in the root folder, as SNEEK will load it when found, and if you didn't apply the patch to use DI this will cause a freeze.
   * the FAT lib used doesn't seem to work with 64K cluster size, assure that you use a smaller size
