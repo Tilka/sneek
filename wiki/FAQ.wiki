@@ -5,6 +5,15 @@
 <wiki:toc max_depth="2"/>
 
 [http://det1re.de/a/sneek/sneek_div.png]
+= My drive just blinks =
+When your drive blinks in a pattern something went wrong, here is a list of what each pattern means:
+  * 1:The TMD of the requested title is missing
+  * 2:The TMD of the IOS the current title uses is missing
+  * 3:The kernel.bin is not found on sd and or usb
+  * 4:Failed to load the requested IOS (missing IOS, missing TMD/Ticket/content)
+  * 5:Could not open or read sd:/sneek/kernel.bin
+
+[http://det1re.de/a/sneek/sneek_div.png]
 = I just get a black screen =
   * assure that you put the NAND FS dump into the root of the SD card
   * assure that the kernel.bin is in sneek folder in the root of the SD card
