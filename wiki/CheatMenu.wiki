@@ -1,4 +1,6 @@
+#summary This site explains the usage of the cheat menu
 #labels Featured
+
 = Introduction =
 
 The cheat menu is divided into three parts
