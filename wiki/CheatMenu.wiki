@@ -1,6 +1,4 @@
 #labels Featured
-#This page explains how the cheat menu works.
-
 = Introduction =
 
 The cheat menu is divided into three parts
