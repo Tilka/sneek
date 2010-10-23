@@ -10,7 +10,7 @@ The cheat menu is divided into three parts
 
 = Main menu =
 
-Here you can select what you want to do, currently only find value is implemented
+The main menu is opened by pressing B and ONE, here you can select what you want to do, currently only find value is implemented
 
 = Find Value =
 
