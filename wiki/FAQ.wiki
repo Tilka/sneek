@@ -9,6 +9,7 @@
 When your drive blinks in a pattern something went wrong, here is a list of what each pattern means:
   * 1:The TMD of the requested title is missing
   * 2:The TMD of the IOS the current title uses is missing
+     * Can be cause by incorrect cluster size ( only 32KB and less are supported) 
   * 3:The kernel.bin is not found on sd and or usb
   * 4:Failed to load the requested IOS (missing IOS, missing TMD/Ticket/content)
   * 5:Could not open or read sd:/sneek/kernel.bin
